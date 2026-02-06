@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS FUNCTIONS</title>
+    <script>
+
+        //Funtion Decleration
+        function add(a,b)
+        {
+            return a + b;
+        }
+        
+        //Function Expression
+        const multiply = function(a,b)
+        {
+            return a * b;
+        }
+
+        //Arrow Function
+        const subtract = (a,b) => a-b;
+
+        console.log(add(10,5));
+        console.log(multiply(10,5));
+        console.log(subtract(10,5));
+
+        let fact = Number(prompt("Enter the number"));
+
+        f =  function(a)
+        {
+            let result = 1;
+            for( let i=1; i<=a; i++)
+            {
+                result*= i;
+            }
+            return result;
+        }
+
+        document.write(f(fact));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
